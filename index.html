@@ -12,26 +12,29 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
 </head>
 
 <body>
-    <div>
-        <header class="row_header">
-            <h4 class="high_scores">High Scores</h4>
-            <h4 class="timer" id="timer">Timer:0</h4>
-        </header>
+    <div class="container">
+        <div class="high-scores"><a href="score.html">High Scores</a></div>
+        <div class="timer">Time:<span id="countdown"></span></div>
         <h1>Code Quiz!</h1>
         <p>
             Welcome! <br>
             Once the quiz begins, the timer will start. <br>
             Try to answer the questions correctly or you will be penalized on time.<br>
-            When you answer all the questions or the timer reaches 0 the quiz is over.<br>
+            When you answer all the questions or the timer reaches 0 the quiz is OVER.<br>
             Save your score with your initials.
         </p>
-    </div>
-    <div class="container">
-        <button type="button" id="quiz-button" class="btn btn-primary">
+        <button type="button" id="quiz-btn" class="btn btn-primary">
           Start Quiz
         </button>
-        <div class="container" id="quiz-container"></div>
+        <div class="container" id="q-container">
+            <h2 id="question">Question</h2>
+            <div id="choices" class="btn-grid">
+            <button class="choice-btn">Answer 1</button>
+            <button class="choice-btn">Answer 2</button>
+            <button class="choice-btn">Answer 3</button>
+            <button class="choice-btn">Answer 4</button>
+        </div>
     </div>
-    <script> src="assets/script.js"</script>
+    <script src="assets/script.js"></script>
 </body>
 </html>

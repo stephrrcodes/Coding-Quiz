@@ -1,0 +1,49 @@
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+:root {
+    --first-color: black;
+	--second-color: red;
+	--third-color: green;
+}
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: skyblue;
+}
+h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+.container {
+	width: 800px;
+	max-width: 80%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+.btn-grid {
+	font-size: 1.5rem;
+	text-align: center;
+
+}
+.high-scores{
+	font-size: 1.5rem;
+	text-align: left;
+}
+.timer{
+	font-size: 1.5rem;
+	text-align: right;
+}
