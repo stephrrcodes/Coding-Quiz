@@ -5,24 +5,24 @@ var questionsInfo = [
         answer:"object-oriented"
     },
     {
-        question:"",
-        choices: [],
-        answer:""
+        question:"Which of the following are NOT the JavaScript Data types",
+        choices: ["object", "string", "boolean", "section"],
+        answer:"section"
     },
     {
-        question:"",
-        choices: [],
-        answer:""
+        question:"Inside which HTML element do we put the JavaScript?",
+        choices: ["<javascript>", "<script>", "<js>", "<scripting>"],
+        answer:"<script>"
     },
     {
-        question:"",
-        choices: [],
-        answer:""
+        question:"Which operator is used to assign a value to a variable",
+        choices: ["*","-", "=", "+"],
+        answer:"="
     },
     {
-        question:"",
-        choices: [],
-        answer:""
+        question:"How can you add a comment in a JavaScript?",
+        choices: ["?This is a comment?", "*/This is a comment/*", "(This is a comment)", "//This is a comment" ],
+        answer:"//This is a comment"
     },
 ]
 var question= document.getElementById("question")
