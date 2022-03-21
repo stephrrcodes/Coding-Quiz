@@ -25,23 +25,25 @@ var questionsInfo = [
         answer:"//This is a comment"
     },
 ]
+
+
 var question= document.getElementById("question")
 var choices = document.querySelectorAll("choice-btn") 
 var quizBtn = document.getElementById("quiz-btn");
 var qContainer = document.querySelector("#q-container")
 var countDown = document.querySelector("#countdown")
+var quizTime = questionsInfo.length * 12;
 countDown.textContent = quizTime;
-var quizTime = 60
 
 let currentQuestionIndex = 0;
 
 function startTimer(){
-        quizTime--;
-        countDown.textContent = quizTime;
+    quizTime--;
+ countDown.textContent = quizTime;
 }
 
 function loadQuestion(){
-    console.log ("start quiz");
+    console.log (currentQuestionIndex);
     question.textContent = questionsInfo[currentQuestionIndex].question;
         for (
             var i= 0;
@@ -53,4 +55,9 @@ function loadQuestion(){
 function nextQuestion(){
 
 }
+function results(){
+    
+}
+
 quizBtn.addEventListener("click",loadQuestion);
+qContainer.addEventListener("click", results);
