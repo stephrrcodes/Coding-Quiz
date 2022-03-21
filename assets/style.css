@@ -36,8 +36,19 @@ h2 {
 }
 .btn-grid {
 	font-size: 1.5rem;
+	display:block;
 	text-align: center;
 
+}
+.btn:hover{
+	opacity: 50%;
+}
+.btn.correct {
+	color: var(--third-color);
+}
+
+.btn.wrong {
+	color: var(--second-color);
 }
 .high-scores{
 	font-size: 1.5rem;

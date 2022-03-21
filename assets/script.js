@@ -31,15 +31,9 @@ var quizBtn = document.getElementById("quiz-btn");
 var qContainer = document.querySelector("#q-container")
 var countDown = document.querySelector("#countdown")
 countDown.textContent = quizTime;
-var quizTime = 80
+var quizTime = 60
 
-console.log(choices)
-
-var currentQuestionIndex = 0;
-function startQuiz() {
-    quizTime = setInterval(startTimer, 1000);
-    loadQuestion();
-}
+let currentQuestionIndex = 0;
 
 function startTimer(){
         quizTime--;
@@ -47,12 +41,16 @@ function startTimer(){
 }
 
 function loadQuestion(){
-    console.log ("question click");
+    console.log ("start quiz");
     question.textContent = questionsInfo[currentQuestionIndex].question;
         for (
             var i= 0;
             i < questionsInfo[currentQuestionIndex].choices.length;) i++;    
     choices.textContent = questionsInfo[currentQuestionIndex].choices[i];
+    nextQuestion()
 }
 
+function nextQuestion(){
+
+}
 quizBtn.addEventListener("click",loadQuestion);
